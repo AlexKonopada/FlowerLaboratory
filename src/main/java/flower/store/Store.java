@@ -34,28 +34,28 @@ public class Store {
         flowerBucketList.add(flowerBucket);
     }
 
-    public ArrayList<Flower> makeFlowerPurchase (
+    public ArrayList<Flower> makeFlowerPurchase(
             int minPrice, int maxPrice) {
         if (!this.flowerList.isEmpty()) {
             this.flowerList.clear();
         }
         for (Flower flower: flowerList) {
-            if (flower.getPrice() >= minPrice &&
-                    flower.getPrice() <= maxPrice) {
+            if (flower.getPrice() >= minPrice
+                    && flower.getPrice() <= maxPrice) {
                 this.flowerList.add(flower);
             }
         }
         return this.flowerList;
     }
 
-    public ArrayList<FlowerPack> makeFlowerPackPurchase (
+    public ArrayList<FlowerPack> makeFlowerPackPurchase(
             int minPrice, int maxPrice) {
         if (!this.flowerPackList.isEmpty()) {
             this.flowerPackList.clear();
         }
         for (FlowerPack flowerPack: flowerPackList) {
-            if (flowerPack.getPrice() >= minPrice &&
-                    flowerPack.getPrice() <= maxPrice) {
+            if (flowerPack.getPrice() >= minPrice
+                    && flowerPack.getPrice() <= maxPrice) {
                 this.flowerPackList.add(flowerPack);
             }
         }
@@ -68,8 +68,8 @@ public class Store {
             this.flowerBucketList.clear();
         }
         for (FlowerBucket flowerBucket: flowerBucketList) {
-            if (flowerBucket.getPrice() >= minPrice &&
-                    flowerBucket.getPrice() <= maxPrice) {
+            if (flowerBucket.getPrice() >= minPrice
+                    && flowerBucket.getPrice() <= maxPrice) {
                 this.flowerBucketList.add(flowerBucket);
             }
         }
