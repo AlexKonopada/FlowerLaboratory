@@ -34,7 +34,8 @@ public class Store {
         flowerBucketList.add(flowerBucket);
     }
 
-    public ArrayList<Flower> makeFlowerPurchase(int minPrice, int maxPrice) {
+    public ArrayList<Flower> makeFlowerPurchase
+            (int minPrice, int maxPrice) {
         if (!this.flowerList.isEmpty()) {
             this.flowerList.clear();
         }
@@ -46,7 +47,8 @@ public class Store {
         return this.flowerList;
     }
 
-    public ArrayList<FlowerPack> makeFlowerPackPurchase(int minPrice, int maxPrice) {
+    public ArrayList<FlowerPack> makeFlowerPackPurchase
+            (int minPrice, int maxPrice) {
         if (!this.flowerPackList.isEmpty()) {
             this.flowerPackList.clear();
         }
@@ -58,7 +60,8 @@ public class Store {
         return this.flowerPackList;
     }
 
-    public ArrayList<FlowerBucket> makeFlowerBucketPurchase(int minPrice, int maxPrice) {
+    public ArrayList<FlowerBucket> makeFlowerBucketPurchase
+            (int minPrice, int maxPrice) {
         if (!this.flowerBucketList.isEmpty()) {
             this.flowerBucketList.clear();
         }

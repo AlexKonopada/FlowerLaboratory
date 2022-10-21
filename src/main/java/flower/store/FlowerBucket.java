@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class FlowerBucket {
     private ArrayList<FlowerPack> bucketOfFlowers;
-    private double bucketPrice = 0;
+    private double bucketPrice;
     public FlowerBucket(ArrayList<FlowerPack> packOfFlowers) { // when we already have a pack
         this.bucketOfFlowers = packOfFlowers;
     }
